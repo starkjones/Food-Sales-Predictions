@@ -20,7 +20,7 @@ When comparing the Item Type Counts with Item Type by Store Sales we can readily
 
 Heat maps can help with concentrating our focus on elements that share a relationship. They can also be used to affirm our initial insights; there is significant positive correlation between Max Retail Price and Item Outlet sales. 
 
-## MACHINE LEARNING DATA PREPARATION & MODELING
+## MACHINE LEARNING & MODELING
 
 Machine learning is used to streamline, expedite and enhance the forecasting process by removing repetitive manual procedures. Automating algorithms or programs allow for higher efficiency, deeper insights, and higher profitability. 
 In the Machine Learning section, we use a copy of the unadulterated data as a basis and instructive training tool for our models. Two different models will use this training data to draw inferences and detail elemental relationships between features or columns so that they will be able to interact with, and perform similar analysis on testing or unseen data. 
