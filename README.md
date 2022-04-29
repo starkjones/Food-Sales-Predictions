@@ -8,22 +8,9 @@
 #### This data set encompasses various features associated with revenue including, but not limited to, the type and quantity of items sold, the type, size, and location of the outlets or stores that the items are sold to, the maximum retail price of each item, and the individual outlet sales for each item. It is important to separate, regroup and isolate these elements so that they can collated, correlated and analyzed against current sales. The insights from the evaluation can then be used to determine a strategy for revenue growth. 
 ![image](https://user-images.githubusercontent.com/101145586/165904456-898edc65-da05-48b7-b8ba-19b3d84e1cdb.png)
 
-
-## DATA EXPLORATION & DATA CLEANING 
-
-The following outlines the sequencing and methodology used for understanding and then cleaning or preparing the data for visual analysis
-1.	We began by identifying and removing rows of duplicated data
-2.	Next, we checked for missing values and made the decision to use two different imputation strategies based on the data type of the column that the missing value or NaN was in. 
-a.	The most frequent observation was used to replace NaNs in object columns 
-b.	The mean was used to replace NaNs in numeric columns
-3.	After confirming that the missing values were eliminated, we employed a ‘for loop’ to identify all of the non-numeric columns so that we could check for inconsistencies amongst their values. 
-a.	‘Low fat and ‘low Fat’ were consolidated for example as they both represent the same value type. 
-4.	Lastly, we used a statistical summary to gain a better understanding of the values in the numeric columns. 
-
-
 ## VISUAL ANALYSIS
 
-Now that the data is free of duplicates, missing values and other anomalies it can be used for visual analysis. Graphs and heatmaps are used to organize, and simply huge quantities of data and illuminate trends. 
+Once the data is processed and free of duplicates, missing, values and other anomalies it can be used for visual analysis. Graphs and heatmaps are used to organize, and simply huge quantities of data and illuminate trends. 
 
 ![image](https://user-images.githubusercontent.com/101145586/165904154-6b500726-3d61-4a57-8678-b0e4883075f1.png)
 
@@ -44,16 +31,15 @@ Both the Linear Regression and Regression Tree models exhibit high bias or under
 
 ## BUSINESS RECOMMENDATIONS
 
-I recommend the Regression Tree model over the Linear Regression model even though the difference in their performance, as measured by Coefficient of Determination or R2, is slight. I would also ask the stakeholders to provide more data for either models training. The positive correlation between 
+I would recommend the Regression Tree model over the Linear Regression model even though the difference in their performance, as measured by Coefficient of Determination or R2, is slight. However, I would ask the stakeholders to prioritize the production and collection of more data for either models training. Both models performed poorly, and I believe that the main issue is the lack of data and/or the quantity and types of features used to predict future values for our target, Item Outlet Sales.
 
 ## SUMMARY
 
-As stated in the analysis section the Linear Regression model and Regression Tree model performed poorly on both training and testing data. The models are underfit. 
-There are several possible solutions that will be explored in order to correct their performance. 
-•	The models may require more training data to learn and gain insights from. The current data set is under 10,000 rows at 8523, maybe it requires 100,000 for adequate performance. 
-•	I’ve noticed that the Mean Absolute Error and the Root Mean Squared Error for the test scores of both models range from 738.32-805.93 (Tree -Linear) and 1,057.44 – 1,094.77 (Tree-Linear) respectively. The Regression Tree has the smaller errors in both instances. The errors appear to be in dollar amounts which is consistent with our target, ‘Item Outlet Sales’, also measures in dollars. An error of 700.00 – 1100.00 dollars is considerable when a majority of outlet sales oscillate around the 2,000.00 dollars. 
-•	Another solution would be to explore the use and performance of a different type of regression model, a Bagged Regression Tree or Random Forest for instance. This way we can start from a higher level of performance, and as is the case with the Random Forest, we can adjust estimators as needed to balance out bias and variance for an optimal fit. 
+Observation:
+It is evident from the correlation matrix and model test scores that there are few features that are positively correlated with our target. After Item Maximum Retail Price, with a positive correlation value of 0.57, the strongest correlation with our target is Item weight with a value of 0.012 – this is an insignificant correlation. Without 3 or more strongly correlated features the performance of most models would be in question. Several of the columns provided in the dataset are inherently ineffective in efforts to predict sales outcomes. Item Identifier, Outlet Identifier and Outlet Establishment Year are such columns. 
 
+Proposed Solution: 
+I would also suggest that the stakeholders explore metrics related to foot traffic, neighboring tenants, and demographical metrics (populations size, average age, marital status, number of children, education level, income, occupation, etc.). These metrics would help the models and stakeholders learn more about the habits and preferences of their local customers. The addition of these new features in conjunction with more data for the current feature columns would drastically improve the complexity, and predictive capacity of the current models, laying the foundation for definitive decision making and confidence capital re-allocation. 
 
 ## REFERENCES
 #### https://datahack.analyticsvidhya.com/contest/practice-problem-big-mart-sales-iii/
