@@ -1,8 +1,8 @@
-# Food-Sales-Predictions-
-## Predicting sales volume at various stores
+# GROCERY-SALES-PROJECTIONS 
+## PREDICTING SALES VOLUME AT VARIOUS STORES
 #### Jonathan Jones 
 #### 22.04.29
-### This project aims to help the retailer understand the properties of their products and outlets that play a key role in predicting sales.
+#### This project aims to help the retailer understand the properties of their products and outlets that play a key role in predicting sales.
 
 ## DATA
 #### This data set encompasses various features associated with revenue including, but not limited to, the type and quantity of items sold, the type, size, and location of the outlets or stores that the items are sold to, the maximum retail price of each item, and the individual outlet sales for each item. It is important to separate, regroup and isolate these elements so that they can collated, correlated and analyzed against current sales. The insights from the evaluation can then be used to determine a strategy for revenue growth. 
@@ -35,6 +35,8 @@ Heat maps can help with concentrating our focus on elements that share a relatio
 
 ## MACHINE LEARNING DATA PREPARATION & MODELING
 
+Machine learning is used to streamline, expedite and enhance the forecasting process by removing repetitive manual elements. Automating algorithms allow for higher efficiency, deeper insights and higher profitability. 
+In the Machine Learning section, we use a copy of the unadulterated data as a basis and instructive training tool for our models. Two different models use this training data to draw inferences and detail elemental relationships so that they will be able to interact and perform similar analysis on testing, or unseen, data. 
 
 ## INSIGHTS & EVALUATION
 
