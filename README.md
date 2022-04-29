@@ -35,14 +35,25 @@ Heat maps can help with concentrating our focus on elements that share a relatio
 
 ## MACHINE LEARNING DATA PREPARATION & MODELING
 
-Machine learning is used to streamline, expedite and enhance the forecasting process by removing repetitive manual elements. Automating algorithms allow for higher efficiency, deeper insights and higher profitability. 
+Machine learning is used to streamline, expedite and enhance the forecasting process by removing repetitive manual procedures. Automating algorithms or programs allow for higher efficiency, deeper insights, and higher profitability. 
 In the Machine Learning section, we use a copy of the unadulterated data as a basis and instructive training tool for our models. Two different models use this training data to draw inferences and detail elemental relationships so that they will be able to interact and perform similar analysis on testing, or unseen, data. 
 
 ## INSIGHTS & EVALUATION
 
+Both the Linear Regression and Regression Tree models exhibit high bias or underfitting, meaning that they have difficulty formulating predictions on training and testing data regardless of the featrue matrix used to predict the target. Their respective test and training scores are close in value but ultimately too low to inspire confidence in their performance. 
+
 ## BUSINESS RECOMMENDATIONS
 
+I recommend the Regression Tree model over the Linear Regression model even though the difference in their performance, as measured by Coefficient of Determination or R2, is slight. I would also ask the stakeholders to provide more data for either models training. The positive correlation between 
+
 ## SUMMARY
+
+As stated in the analysis section the Linear Regression model and Regression Tree model performed poorly on both training and testing data. The models are underfit. 
+There are several possible solutions that will be explored in order to correct their performance. 
+•	The models may require more training data to learn and gain insights from. The current data set is under 10,000 rows at 8523, maybe it requires 100,000 for adequate performance. 
+•	I’ve noticed that the Mean Absolute Error and the Root Mean Squared Error for the test scores of both models range from 738.32-805.93 (Tree -Linear) and 1,057.44 – 1,094.77 (Tree-Linear) respectively. The Regression Tree has the smaller errors in both instances. The errors appear to be in dollar amounts which is consistent with our target, ‘Item Outlet Sales’, also measures in dollars. An error of 700.00 – 1100.00 dollars is considerable when a majority of outlet sales oscillate around the 2,000.00 dollars. 
+•	Another solution would be to explore the use and performance of a different type of regression model, a Bagged Regression Tree or Random Forest for instance. This way we can start from a higher level of performance, and as is the case with the Random Forest, we can adjust estimators as needed to balance out bias and variance for an optimal fit. 
+
 
 ## REFERENCES
 #### https://datahack.analyticsvidhya.com/contest/practice-problem-big-mart-sales-iii/
