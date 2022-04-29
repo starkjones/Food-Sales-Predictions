@@ -23,7 +23,7 @@ The first project will be a sales prediction for food items sold at various stor
 DATA EXPLORATION & DATA CLEANING 
 
 VISUAL ANALYSIS
-
+https://github.com/Caellwyn/well-predicter-tanzania/blob/main/README.md
 MODELING
 
 INSIGHTS & EVALUATION
