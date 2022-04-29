@@ -27,7 +27,7 @@ In the Machine Learning section, we use a copy of the unadulterated data as a ba
 
 ## INSIGHTS & EVALUATION
 
-Both the Linear Regression and Regression Tree models exhibit high bias or underfitting, meaning that they have difficulty formulating predictions on training and testing data regardless of the featrue matrix used to predict the target. Their respective test and training scores are close in value but ultimately too low to inspire confidence in their performance. 
+Both the Linear Regression and Regression Tree models exhibit high bias or underfitting, meaning that they have difficulty formulating predictions on training and testing data regardless of which featrues are used from the current matrix. Their respective test and training scores are close in value but ultimately too low to inspire confidence in their performance. 
 
 ## BUSINESS RECOMMENDATIONS
 
