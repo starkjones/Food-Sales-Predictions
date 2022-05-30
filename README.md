@@ -23,7 +23,7 @@ Heat maps can help with concentrating our focus on elements that share a relatio
 ## MACHINE LEARNING & MODELING
 
 Machine learning is used to streamline, expedite and enhance the forecasting process by removing repetitive manual procedures. Automating algorithms or programs allow for higher efficiency, deeper insights, and higher profitability. 
-In the Machine Learning section, we use a copy of the unadulterated data as a basis and instructive training tool for our models. Two different models will use this training data to draw inferences and detail elemental relationships between features or columns so that they will be able to interact with, and perform similar analysis on testing or unseen data. 
+In the Machine Learning section, we use a copy of the unadulterated data as a basis and instructive training tool for our models. Two different models are used with this training data to draw inferences and detail elemental relationships between features or columns so that they will be able to interact with, and perform similar analysis on testing or unseen data. 
 
 ## INSIGHTS & EVALUATION
 
